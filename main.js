@@ -1,8 +1,8 @@
 const Parente = {
-    namorada: 'Tamires',
-    mae: 'Edleuza',
-    pai: 'Didi',
-    irma: [ 'Wandra', 'Laiza'],
+    namorada: 'Jane',
+    mae: 'Maria',
+    pai: 'Jelson',
+    irma: [ 'Manu', 'Marcos'],
 
 }
 
@@ -13,7 +13,7 @@ family.prototype.namorada = 'monica';
 function Declaration(Mae){
     const nomes = {...family.prototype};
     const { namorada } = nomes;
-    var mosinho = `${namorada} Alberto Oliveira`;
+    var mosinho = `${namorada} `;
     var tam =  nomes.namorada =  `Minha noiva ${mosinho}  está com minha Mãe: `;
    
     if(Mae == null) {
@@ -31,7 +31,7 @@ function Declaration(Mae){
 }
 
 const resultCall = Declaration.call(Parente);  
-const resultApply = Declaration.apply(Parente, ["Laiza"]);
+const resultApply = Declaration.apply(Parente, ["Jeiza"]);
 const resultBind = Declaration.bind(Parente);
 
 console.log( resultBind('Deusinha'));
