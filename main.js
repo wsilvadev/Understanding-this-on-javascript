@@ -24,7 +24,7 @@ function Declaration(Mae){
     else 
     {
         nomes.mae = Mae;    
-        return tam + `${Mae}`;;
+        return tam + `${Mae}`;
   
     }
     
