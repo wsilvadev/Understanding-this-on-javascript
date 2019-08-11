@@ -2,7 +2,7 @@ const Parente = {
     namorada: 'Jane',
     mae: 'Maria',
     pai: 'Jelson',
-    irma: [ 'Manu', 'Marcos'],
+    irma: [ 'Manu', 'Marcia'],
 
 }
 
@@ -31,7 +31,7 @@ function Declaration(Mae){
 }
 
 const resultCall = Declaration.call(Parente);  
-const resultApply = Declaration.apply(Parente, ["Jeiza"]);
+const resultApply = Declaration.apply(Parente, ["Jeiza "]);
 const resultBind = Declaration.bind(Parente);
 
 console.log( resultBind('Deusinha'));
